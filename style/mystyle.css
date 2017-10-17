@@ -1,31 +1,155 @@
-ul {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
 }
 
-li {
-    float: left;
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
 }
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover:not(.active) {
-    background-color: #111;
+.navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #607D8B;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
 }
 
-.active {
-    background-color: #4CAF50;
+.navbar li a, .navbar .navbar-brand {
+    font-family: Montserrat, sans-serif;
+    color: #fff !important;
 }
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #607D8B !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+.container-fluid {
+    padding-top: 60px;
+}
+
+.img-circle {
+    height: 200px;
+}
+
+.jumbotron { 
+    background-color: #607D8B; 
+    color: #ffffff;
+}
+
+.skills {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 20px;
+  color: white;
+  background-color: #607D8B; 
+}
+
+.java {
+    margin-bottom: 30px;
+    width: 82.5%;
+}
+.html {
+    margin-bottom: 30px;
+    width: 73.3333%;
+}
+.css {
+    margin-bottom: 30px;
+    width: 59.5833333%;
+}
+.js {
+    margin-bottom: 30px;
+    width: 73.3333%;
+}
+.python {
+    margin-bottom: 30px;
+    width: 70%;
+}
+.r {
+    margin-bottom: 30px;
+    width: 65%;
+}
+
+
+
+#profile {
+    border-style: solid;
+    border-color: #CFD8DC
+    border-radius: 0;
+    padding: 100px 60px;
+}
+
+#professional, #contact {
+    padding: 100px 60px;
+    /*background-color: #263238*/
+}
+
+#portfolio {
+    padding: 100px 60px;
+    background-color: #ECEFF1;
+}
+
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #263238;
+}
+
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+

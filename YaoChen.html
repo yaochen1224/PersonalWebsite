@@ -2,28 +2,206 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta name="web exercise" content="personal website">
     <meta name="author" content="Yao Chen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YaoChen</title>
-    <link rel="stylesheet" type="text/css" href="style/mystyle.css">
+    <title>Yao Chen</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style/mystyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+         // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 900, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+            });
+          } // End if
+        });
+      })
+
+      $(window).scroll(function() {
+        $(".slideanim").each(function(){
+          var pos = $(this).offset().top;
+
+          var winTop = $(window).scrollTop();
+          if (pos < winTop + 600) {
+            $(this).addClass("slide");
+          }
+        });
+      });
+      </script>
   </head>
-  <body>
-    <nav id="navigation bar">
-      <ul>
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href=#experience>Experience</a></li>
-        <li><a href=#professional>Professional</a></li>
-        <li><a href=#contace>contact</a></li>
-        <li style="float:right"><a href="#about">About</a>
-        <li><a href="#"><button class="btn btn-default btn-lg">Get in Touch</button></a>
-      </ul>
-    </nav>
-    <div id="home" class="container-fluid">
-      <p>Newton's parakeet (Psittacula exsul) is an extinct species of parrot that was endemic to the Mascarene island of Rodrigues in the western Indian Ocean. Several of its features diverged from related species, indicating long-term isolation and adaptation on Rodrigues. Around 40 centimetres (16 in) long, Newton's parakeet was roughly the size of the rose-ringed parakeet, a close relative and probable ancestor. Its plumage was mostly greyish or slate blue, although most species in its genus are green. Little is known about its behaviour; it may have fed on nuts of the bois d'olive tree, along with leaves. It was very tame, and was able to mimic speech. Newton's parakeet was first written about by the French Huguenot François Leguat in 1708, and was mentioned only a few times by other writers. The bird became scarce due to deforestation and perhaps hunting, and was probably wiped out by a series of cyclones and storms that hit Rodrigues in the late 19th century. Only two specimens remain, both from the 1870s. (Full article...)</p>
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+   <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span> 
+        </button>
+        <a class="navbar-brand" href="#">Yao Chen's World</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#professional">PROFESSIONAL</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
+   
+
+    <div id="home" class="jumbotron">
+      <div class="container-fluid text-center">
+        <img src="images/photo.jpeg" class="img-circle" alt="Profile">
+        <h1>Yao Chen</h1>      
+        <p>Instructional Designer, User Researcher, etc</p>
+      </div>
+    </div>
+    
+    <div id="about" class="container-fluid">
+      <div class="col-md-2">
+      </div>
+      <div id = "profile" class="col-md-8 slideanim">
+        <p>  Currently, I’m a second-year graduate student at Teachers College, Columbia University in the program of MA. Instructional Technology and Media, and expecting to graduate in February 2018</p>
+        <p>
+            In addition to my professional experience in media, I also have a strong interest in business analysis. I previously held an internship at Millward Brown, a leading market research company. While there, my role was to provide quantitative research to analyze on consumer’s behavior, evaluate the performance of digital and traditional media campaign for the client, and also visualize the data into reports. This experience gave me an opportunity to understand the product marketing functions and helped me to observe the product development lifecycle. 
+        </p>
+        <p>
+            Through this internship, I was also intrigued with the mighty power of data analysis. In order to dig further into this field, I learned data mining skills on various of online learning platforms. My fast-learning ability benefited me in getting my current position. Now I’ve taken over the data analyst role and work independently at Department of Bioinformatics, Columbia University Medical Center.
+        </p>
+        <button class="btn btn-default center-block" type="button">Download Resume</button>
+      </div>
+      <div class="col-md-2">
+      </div>
+    </div>
+
+    
+
+    <div id="professional" class="container-fluid text-center">
+      <h2>PROFESSIONAL</h2>
+      <h4>My knowledge level in software</h4>
+        <div class="container slideanim">
+          <p class="col-sm-1">JAVA</p>
+          <div class="col-sm-11 skills java">90%</div>
+        </div>
+
+        <div class="container slideanim">
+          <p class="col-sm-1">HTML</p>
+          <div class="col-sm-11 skills html">80%</div>
+        </div>
+
+        <div class="container slideanim">
+          <p class="col-sm-1">CSS</p>
+          <div class="col-sm-11 skills css">65%</div>
+        </div>
+
+        <div class="container slideanim">
+          <p class="col-sm-1">JavaScript</p>
+          <div class="col-sm-11 skills js">80%</div>
+        </div>
+
+        <div class="container slideanim">
+          <p class="col-sm-1">Python</p>
+          <div class="col-sm-11 skills python">75%</div>
+        </div>
+
+        <div class="container slideanim">
+          <p class="col-sm-1">R</p>
+          <div class="col-sm-11 skills r">70%</div>
+        </div>
+    </div>
+
+    <div id="portfolio" class="container-fluid text-center bg-grey">
+      <h2>PORTFOLIO</h2>
+      <h4>What I have created</h4>
+      <div class="row text-center">
+        <div class="col-sm-4 slideanim">
+          <div class="thumbnail">
+            <img src="images/organs.png" alt="Organs">
+            <p><strong>STD Crisis</strong></p>
+            <p>STD Crisis is an educational board game that teaches what damages could STDs cause, and how to cure/prevent them.</p>
+          </div>
+        </div>
+        <div class="col-sm-4 slideanim">
+          <div class="thumbnail">
+            <img src="images/slum1.png" alt="Slum Children">
+            <p><strong>AIESEC Global Community Development Programme</strong></p>
+            <p>We created a project that collected money from online social media by selling handwriting postcards to build a reading room for local students, and improve the lightening system in schools in 2 slum schools of Nairobi, Kenya.</p>
+          </div>
+        </div>
+        <div class="col-sm-4 slideanim">
+          <div class="thumbnail">
+            <img src="images/fry.jpg" alt="San Francisco">
+            <p><strong>Place Holder</strong></p>
+            <p>This is a place holder</p>
+          </div>
+        </div>
+    </div>
+  </div>
+
+    <div id="contact" class="container-fluid bg-grey">
+      <h2 class="text-center">CONTACT</h2>
+      <div  style="padding-top: 30px" class="row">
+        <div class="col-md-2">
+        </div>
+        <div class="col-sm-4  slideanim">
+          <p>Please contact me if you have any further questions.</p>
+          <p><span class="glyphicon glyphicon-map-marker"></span> New York, US</p>
+          <p><span class="glyphicon glyphicon-phone"></span> +1 (917)7033862</p>
+          <p><span class="glyphicon glyphicon-envelope"></span> yc3185@tc.columbia.edu</p> 
+        </div>
+        <div class="col-sm-4  slideanim">
+          <div class="row">
+            <div class="col-sm-6 form-group">
+              <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+            </div>
+            <div class="col-sm-6 form-group">
+              <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+            </div>
+          </div>
+          <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+          <br>
+          <div class="row">
+            <div class="col-sm-12 form-group">
+              <button class="btn btn-default pull-right" type="submit">Send</button>
+            </div>
+          </div> 
+        </div>
+        <div class="col-md-2">
+        </div>
+      </div>
+    </div>
+
+    <footer class="container-fluid text-center slideanim">
+      <a href="#myPage" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+      </a>
+      <p>Back to top</p> 
+    </footer>
+
   </body>
 </html>
