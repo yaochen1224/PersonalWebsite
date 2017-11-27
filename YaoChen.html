@@ -7,13 +7,12 @@
     <title>Yao Chen</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style/mystyle.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-    <script src="scroll.js"></script>
+    <script src="js/builder.js"></script>
   </head>
   <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
    <nav class="navbar navbar-default navbar-fixed-top">
@@ -48,101 +47,95 @@
     </div>
 
     <div id="about" class="container-fluid">
-      <div class="col-md-2">
-      </div>
-      <div id = "profile" class="col-md-8 slideanim">
-        <p>  Currently, I’m a second-year graduate student at Teachers College, Columbia University in the program of MA. Instructional Technology and Media, and expecting to graduate in February 2018</p>
-        <p>
-            In addition to my professional experience in media, I also have a strong interest in business analysis. I previously held an internship at Millward Brown, a leading market research company. While there, my role was to provide quantitative research to analyze on consumer’s behavior, evaluate the performance of digital and traditional media campaign for the client, and also visualize the data into reports. This experience gave me an opportunity to understand the product marketing functions and helped me to observe the product development lifecycle.
-        </p>
-        <p>
-            Through this internship, I was also intrigued with the mighty power of data analysis. In order to dig further into this field, I learned data mining skills on various of online learning platforms. My fast-learning ability benefited me in getting my current position. Now I’ve taken over the data analyst role and work independently at Department of Bioinformatics, Columbia University Medical Center.
-        </p>
-        <button class="btn btn-default center-block" type="button">Download Resume</button>
-      </div>
-      <div class="col-md-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">About</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
+                </div>
+                <div class="timeline-panel slideanim">
+                  <div class="timeline-heading">
+                    <h4>April 2017-NOW</h4>
+                    <h4 class="subheading">Columbia University Medical Center</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
+                </div>
+                <div class="timeline-panel slideanim">
+                  <div class="timeline-heading">
+                    <h4>January 2016-May 2016</h4>
+                    <h4 class="subheading">Millward Brown</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
+                </div>
+                <div class="timeline-panel slideanim">
+                  <div class="timeline-heading">
+                    <h4>July 2015-December 2015</h4>
+                    <h4 class="subheading">Detecon International GmbH</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
+                </div>
+                <div class="timeline-panel slideanim">
+                  <div class="timeline-heading">
+                    <h4>July 2014</h4>
+                    <h4 class="subheading">BDA Investment Management</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image downloadResume">
+                  <h4>Download<br>Resume</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
 
     <div id="professional" class="container-fluid text-center">
       <h2>PROFESSIONAL</h2>
       <h4>My knowledge level in software</h4>
-      <div class="row text-right">
-          <p class="col-sm-2">Java</p>
-          <div class="col-sm-9 progress skill-bar slideanim">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                  <span class="skill">Java<i class="val">90%</i></span>
-              </div>
-          </div>
-
-          <p class="col-sm-2">HTML</p>
-          <div class="col-sm-9 progress skill-bar slideanim">
-              <div class="progress-bar " role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                  <span class="skill">html<i class="val">100%</i></span>
-              </div>
-          </div>
-          <p class="col-sm-2">CSS</p>
-          <div class="col-sm-9 progress skill-bar slideanim">
-              <div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">
-                  <span class="skill">css<i class="val">82%</i></span>
-              </div>
-          </div>
-          <p class="col-sm-2">JavaScript</p>
-          <div class="col-sm-9 progress skill-bar slideanim">
-              <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                  <span class="skill">javascript<i class="val">85%</i></span>
-              </div>
-          </div>
-          <p class="col-sm-2">Python</p>
-          <div class="col-sm-9 progress skill-bar slideanim">
-              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                  <span class="skill">python<i class="val">70%</i></span>
-              </div>
-          </div>
-          <p class="col-sm-2">R</p>
-          <div class="col-sm-9 progress skill-bar slideanim">
-              <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
-                  <span class="skill">r<i class="val">65%</i></span>
-              </div>
-          </div>
-
+      <div id="skills" class="row text-right">
+        <script type="text/javascript">professional.display();</script>
       </div>
     </div>
 
     <div id="portfolio" class="container-fluid text-center bg-grey">
       <h2>PORTFOLIO</h2>
       <h4>What I have created</h4>
-      <i class="fa fa-camera-retro fa-5x"></i>
-      <div class="row text-center">
-        <div class="col-sm-4">
-          <div class="thumbnail">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-              <img src="images/fry.jpg" alt="Paris" width="400" height="300">
-              <div class="overlay">
-                <div class="caption-content">
-                  <p><strong>STD Crisis</strong></p>
-                  <p>An educational board game</p>
-                </div>
-              </div>
-            </a>
-            <p><strong>Paris</strong></p>
-            <p>Yes, we built Paris</p>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="thumbnail">
-            <img src="images/fry.jpg" alt="New York" width="400" height="300">
-            <p><strong>New York</strong></p>
-            <p>We built New York</p>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="thumbnail">
-            <img src="images/fry.jpg" alt="San Francisco" width="400" height="300">
-            <p><strong>San Francisco</strong></p>
-            <p>Yes, San Fran is ours</p>
-          </div>
-        </div>
+      <div class="row">
+        <script type="text/javascript">portfolio.display();</script>
       </div>
     </div>
 
@@ -185,57 +178,6 @@
       </a>
       <p>Back to top</p>
     </footer>
-
-    <!-- Portfolio Modals -->
-
-    <!-- Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-     <div class="modal-dialog" role="document">
-       <div class="modal-content">
-         <div class="close-modal" data-dismiss="modal">
-           <div class="lr">
-             <div class="rl"></div>
-           </div>
-         </div>
-
-         <div class="modal-body">
-           <div class="container">
-             <div class="row">
-               <div class="col-lg-8 center-content">
-           <h2>Project Title</h2>
-           <hr class="star-primary">
-           <img class="img-fluid img-centered" src="images/fry.jpg" alt="">
-           <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
-             <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-           <ul class="list-inline item-details">
-             <li>Client:
-               <strong>
-                 <a href="http://startbootstrap.com">Start Bootstrap</a>
-               </strong>
-             </li>
-             <li>Date:
-               <strong>
-                 <a href="http://startbootstrap.com">April 2014</a>
-               </strong>
-             </li>
-             <li>Service:
-               <strong>
-                 <a href="http://startbootstrap.com">Web Development</a>
-               </strong>
-             </li>
-           </ul>
-           <button class="btn btn-success" type="button" data-dismiss="modal">
-             <i class="fa fa-times"></i>
-             Close</button>
-         </div>
-             </div>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
-
-
 
   </body>
 </html>
